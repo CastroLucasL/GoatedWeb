@@ -125,3 +125,17 @@ footer {
     text-decoration: none;
     margin: 0 10px;
 }
+
+.btn-primary {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+}
+
+.btn-primary:hover, .btn-primary:focus{
+    background-color: black;
+    color: white;
+    border: none;
+    opacity: 0.8;
+}
