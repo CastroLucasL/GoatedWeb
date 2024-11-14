@@ -22,34 +22,56 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                  <img src="../imgs/logo_goat.png" alt="" width="45" height="40">
-                </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../imgs/logo_goat.png" alt="" width="45" height="40">
+            </a>
+            <h1 class="text-center">Goated</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link" href="../aboutsUs.html">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Promociones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../suscribite.html">Suscribite</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../contactanos.html">Contactanos</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-          </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="../aboutsUs.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../promociones.html">Promociones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../suscribite.html">Suscribite</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contactanos.html">Contactanos</a>
+                </li>
+                </ul>
+                <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
         </div>
-      </nav>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="../imgs/prod1.jpg" width="768px" height="1024px" alt="Producto 1" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6">
+                <h1>Producto 1</h1>
+                <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                <p class="text-dark">Precio: $1000</p>
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" max="10">
+                <label for=""></label>
+                <select name="talle" id="">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                </select>
+            </div>
+            <button class="btn btn-primary">Comprar</button>
 
 
 

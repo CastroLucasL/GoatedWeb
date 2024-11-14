@@ -26,6 +26,12 @@ main {
     color: white;
 }
 
+.location {
+    font-size: 15px;
+    color: #46494C;
+    text-decoration: none;
+    margin: 0 0px;
+}
 .carousel-inner h5, p{
     font-size: 15px solid;
     color: #ffffff;
