@@ -29,7 +29,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto justify-content-center">
+            <ul class="navbar-nav w-100 justify-content-center">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">About us</a>
               </li>
@@ -51,26 +51,49 @@
         </div>
       </nav>
       
-      <div class="container contact-page">
-        <h2>Contáctanos</h2>
-        <p>¿Tienes alguna pregunta o comentario? ¡Nos encantaría saber de ti!</p>
-        
-        <form action="#" method="post" class="contact-form">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+      <section class="about-us-section">
+        <div class="about-container">
+            <div class="about-content">
+                <img src="imgs/about-image.jpg" alt="Imagen de nuestra empresa" class="about-image">
+                <div class="about-text">
+                    <h1>Quiénes Somos</h1>
+                    <p>En Goated nos apasiona ofrecer ropa de calidad que combine estilo, autenticidad y comodidad.
 
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                      Nuestra misión es brindarte prendas únicas que te permitan expresarte con confianza y estar siempre a la vanguardia de las tendencias, todo mientras apostamos por la sostenibilidad y la exclusividad.
+                      
+                      ¡Más que una tienda, Goated es una actitud que te acompaña!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <label for="subject">Asunto</label>
-            <input type="text" id="subject" name="subject" placeholder="Asunto" required>
-
-            <label for="message">Mensaje</label>
-            <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
+    <section class="testimonials-section">
+        <h2>Opiniones de nuestra cabritas</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <img src="imgs/client1.jpg" alt="Foto del cliente" class="client-photo">
+                <div class="testimonial-content">
+                    <p>"Sorprendido por la calidad y el estilo. Rápida entrega y buen precio. Definitivamente voy a volver a comprar."</p>
+                    <span class="client-name">Lamine Yamal</span>
+                </div>
+            </div>
+            <div class="testimonial">
+                <img src="imgs/client2.jpg" alt="Foto del cliente" class="client-photo">
+                <div class="testimonial-content">
+                    <p>"Excelente calidad y estilo en la ropa de Goated. Gran variedad y buen servicio, superó mis expectativas. ¡Recomendado!"</p>
+                    <span class="client-name">Allan Saint-Maximin</span>
+                </div>
+            </div>
+            <div class="testimonial">
+                <img src="imgs/client3.jpg" alt="Foto del cliente" class="client-photo">
+                <div class="testimonial-content">
+                    <p>"Ropa de diseño único y materiales duraderos. Todo llegó a tiempo y en perfectas condiciones. Goated for the Goats"</p>
+                    <span class="client-name">Lionel Andres Messi</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
 
 
 
