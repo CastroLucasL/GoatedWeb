@@ -191,3 +191,97 @@ footer {
     border-color: #000;
     outline: none;
 }
+
+/* Estilos About Us */
+.about-container, .testimonials-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* About Us Section */
+.about-us-section {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Estilo del contenedor de opiniones */
+.testimonials-container {
+    display: flex;
+    flex-direction: row; /* Coloca los testimonios en una fila horizontal */
+    gap: 20px;
+    justify-content: center; /* Centra los testimonios en el contenedor */
+    flex-wrap: wrap; /* Para que los testimonios pasen a la siguiente línea en pantallas pequeñas */
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column; /* Para alinear cada contenido del testimonio en columna */
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px; /* Ancho fijo para cada testimonio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.client-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.testimonial-content {
+    text-align: center;
+}
+
+.testimonial-content p {
+    font-size: 1em;
+    color: #555;
+    margin: 0 0 5px;
+}
+
+.client-name {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-top: 5px;
+}
