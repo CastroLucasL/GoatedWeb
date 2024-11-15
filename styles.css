@@ -12,6 +12,10 @@ body {
     overflow-x: hidden;
 }
 
+.navbar-nav{
+    margin-left: 150px;
+}
+
 h1 {
     text-align: center;
     color: #46494C;
@@ -554,4 +558,20 @@ footer {
 }
 .carritocompras{
     height: 5000px;
+}
+
+@media (max-width: 991.5px) {
+    .navbar-nav{
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+    .d-flex{
+        justify-content: right;
+    }
+    .carritoimg{
+        justify-content: right;
+        margin-left: 95%;
+    }
 }
