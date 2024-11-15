@@ -57,7 +57,7 @@ h1 {
 }
 /* Ajustes para los elementos del carrusel */
 .owl-carousel .item {
-    width: 350px; 
+    width: 200px; 
     height: 200px; 
     display: flex;
     justify-content: center;
