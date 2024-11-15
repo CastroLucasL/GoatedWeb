@@ -464,3 +464,13 @@ footer {
     padding: 20px;
     margin: 50px 50px;
 }
+
+/*Estilo About Us*/
+
+.quienesSomos{
+    font-size: 2em;
+    text-align: left;
+}
+.opiniones{
+    font-size: 1.5em;
+}
