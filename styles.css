@@ -148,7 +148,30 @@ footer {
     opacity: 0.8;
 }
 
+/*Estilos para el faq*/
+#faq{
+    max-width: 1200px;
+    margin: 0 50px 0 50px;
+    padding: 20px;
+}
+#faq-tittle{
+    color: #46494C;
+    font-size: 1.5rem;
+    margin-left: 250px;
+}
+.container-faq{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.accordion{
+    padding: 5px;
+    width: 100%;
+    max-width: 600px;   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
 
+/*Estilos para el formulario*/
 .contact-page {
     background-color: #ffffff;
     border-radius: 8px;
@@ -158,6 +181,7 @@ footer {
     max-width: 500px;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .contact-page h2 {
