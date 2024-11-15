@@ -96,9 +96,13 @@
                         </li>
                     `;
                 });
-                cartHTML += `<li class="list-group-item d-flex">
+                cartHTML += `
+                <li class="list-group-item d-flex justify-content-end">
+                    <strong>Total: $${cartItems.reduce((acc, item) => acc + item.price, 0)}</strong>
+                </li>
+                <li class="list-group-item d-flex justify-content-end">
                     <button class="btn btn-primary" onclick="localStorage.removeItem('cart'); location.reload();">Vaciar carrito</button>
-                    <button class="btn btn-primary float-end" onclick="window.location.href = '#';">Finalizar compra</button>
+                    <button class="btn btn-primary" onclick="window.location.href = '#';">Finalizar compra</button>
                 </li>
                 `;
                 cartHTML += '</ul>';
