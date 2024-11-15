@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    font-family: "Instrument Sans", sans-serif;
 }
 
 body {
@@ -143,6 +144,7 @@ footer {
     border: none;
     opacity: 0.8;
 }
+
 
 .contact-page {
     background-color: #ffffff;
