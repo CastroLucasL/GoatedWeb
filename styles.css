@@ -458,3 +458,9 @@ footer {
 .icono {
     font-size: 2rem;
 }
+
+#no-results {
+    text-align: center;
+    padding: 20px;
+    margin: 50px 50px;
+}
