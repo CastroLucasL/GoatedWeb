@@ -11,6 +11,14 @@ body {
     flex-direction: column;
 }
 
+h1 {
+    text-align: center;
+    color: #46494C;
+    font-size: 1rem;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: #46494C;
@@ -25,11 +33,28 @@ main {
     justify-content: center;
     align-items: center;
     display: flex;
-    padding: 5  px;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    position: relative;
 }
 
-#top-banner-text {
+.top-banner-text {
     color: white;
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 30s linear infinite;
+    margin: 0 1px;
+}
+
+
+@keyframes scroll-left {
+    100% {
+        transform: translateX(-100%);
+    }
+    0% {
+        transform: translateX(100%);
+    }
 }
 
 .location {
@@ -74,8 +99,8 @@ main {
     object-fit: cover;
 }
 
-/* Título Carousel*/
-h1 {
+
+h2 {
     text-align: center;
     color: #46494C;
     font-size: 1rem;
