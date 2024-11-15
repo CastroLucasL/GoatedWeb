@@ -10,6 +10,11 @@ body {
     flex-direction: column;
 }
 
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: #46494C;
+}
+
 main {
     flex: 1;
 }
