@@ -6,24 +6,36 @@ document.addEventListener('DOMContentLoaded', function () {
         // Obtener información del producto
         const quantity = document.querySelector('#cant').value;
         const size = document.querySelector('#talle').value;
-        const price = document.querySelector('#precio').textContent;
-        const name = document.querySelector('#name').textContent;
-        let priceInt = price.replace('$', '');
-        priceInt = priceInt.replace('.', '');
-        priceInt = parseInt(priceInt);
-        priceInt = priceInt * parseInt(quantity);
-        const product = {
-            name: name,
-            price: priceInt,
-            quantity: parseInt(quantity),
-            size: size,
-        };
+        const priceElement = document.querySelector('#precio');
+        const nameElement = document.querySelector('#name');
+        const imageElement = document.querySelector('img.img-fluid'); // Obtener la imagen del producto
 
-        // Añadir producto al carrito
-        cartItems.push(product);
-        localStorage.setItem('cart', JSON.stringify(cartItems));
+        if (priceElement && nameElement && imageElement) {
+            let price = priceElement.textContent;
+            const name = nameElement.textContent;
+            const imageSrc = imageElement.src; // Obtener la ruta de la imagen
 
-        // Notificar al usuario
-        alert('Producto agregado al carrito!');
+            price = price.replace('$', '');
+            price = price.replace('.', '');
+            price = parseInt(price);
+            price = price * parseInt(quantity);
+
+            const product = {
+                name: name,
+                price: price,
+                quantity: parseInt(quantity),
+                size: size,
+                image: imageSrc, // Añadir la ruta de la imagen al objeto del producto
+            };
+
+            // Añadir producto al carrito
+            cartItems.push(product);
+            localStorage.setItem('cart', JSON.stringify(cartItems));
+
+            // Notificar al usuario
+            alert('Producto agregado al carrito!');
+        } else {
+            console.error('No se pudo obtener la información del producto.');
+        }
     });
 });

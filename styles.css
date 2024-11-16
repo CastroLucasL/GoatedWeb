@@ -134,12 +134,7 @@ h2 {
 }
 
 .owl-carousel .item img {
-    display: block; 
-    margin: 0 auto; 
-    width: 100%; 
-    max-height: 99%;
-    height: auto; 
-    object-fit: cover;
+    justify-content: center;
 }
 
 #container-sponsors {
@@ -242,6 +237,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    margin: 0px;
 }
 .footer-banner {
     background-color: #46494C;
