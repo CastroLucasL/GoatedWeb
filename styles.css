@@ -89,15 +89,21 @@ main {
     transform: translateY(20px);
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
-.carousel-item.active .carousel-caption h5,
+.carousel-item.active .carousel-caption h5{
+    opacity: 1;
+    transform: translateY(0);
+}
 .carousel-item.active .carousel-caption p {
     opacity: 1;
     transform: translateY(0);
+    height: 900px ;
+    
+    
 }
 .custom-carousel {
     max-width: 1652px;
     height: auto;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 .custom-carousel .carousel-item img {
     width: 100%; 
@@ -135,24 +141,24 @@ h2 {
 }
 
 .owl-carousel .item img {
+    
     justify-content: center;
 }
 
 #container-sponsors {
-    width: 80%; 
     margin: 0 auto; 
     margin-bottom: 40px;    
 
 }
 
 #container-sponsors .item {
-    width: 100px; 
+    margin-left: 93px;
     height: 100px; 
     border: none;
 }
 
-#container-sponsors .item-messi{
-    width:70px;
+#container-sponsors .item-messi{ 
+    width: 70px;
     height:70px;
     margin-top: 20px;
 }
@@ -164,6 +170,7 @@ h2 {
     border-radius: 8px;
     cursor: pointer;
     aspect-ratio: 1 / 1;
+    margin-bottom: 150px;
 }
 
 /* Estilos para la capa de overlay */
@@ -571,4 +578,5 @@ footer {
         justify-content: right;
         margin-left: 95%;
     }
+    
 }
