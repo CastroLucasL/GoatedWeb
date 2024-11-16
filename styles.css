@@ -555,6 +555,30 @@ footer {
     font-size: 1.5em;
 }
 
+/* Botón de Guía de Talles */
+.btn-guia-talles {
+    margin-top: 15px; /* Espaciado superior */
+    margin-left: 15px;
+    padding: 8px 20px; /* Tamaño compacto */
+    font-size: 0.85rem; /* Tamaño del texto ajustado */
+    font-weight: 600; /* Texto más fuerte */
+    background-color: black; /* Color de fondo */
+    color: #FFFFFF; /* Color de texto */
+    border: 2px solid #46494C; /* Borde sólido */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease; /* Transiciones suaves */
+    width: 130px;
+}
+
+.btn-guia-talles:hover {
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+    border: 2px solid #46494C; /* Mantiene el borde */
+}
+
+
 /*Estilos para la tabla de talles*/
 .container-tabla{
     max-width: 800px;
@@ -574,9 +598,10 @@ footer {
 }
 .container-tabla td{
     color: #fff;
-    text-align: center;
+    text-align: center; 
     background-color: #46494C;
 }
+/*Carrito*/
 .carritocompras{
     height: 5000px;
 }
