@@ -151,8 +151,8 @@
         </div>
     </div>
     </main>
-    <!--Footer-->
-    <footer class="bg-light text-center text-lg-start mb-4">   
+     <!--Footer-->
+     <footer class="bg-light text-center text-lg-start mb-4">   
       <div class="container p-1" id="footer-div">
         <div class="row">
       <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
@@ -163,24 +163,27 @@
             <p class="location ">
               Location: Lima 757, CABA, Argentina
             </p>
-            <a href="#" class="text-decoration-none text-dark"><i class="bi bi-envelope"></i></a>   
-            <a href="#" class="text-decoration-none text-dark"><i class="bi bi-twitter-x"></i></a> 
-            <a href="#" class="text-decoration-none text-dark"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" class="text-decoration-none text-dark"><i class="bi bi-instagram"></i></a>   
+            <a href="https://x.com/" class="text-decoration-none text-dark" target="_blank"><i class="bi bi-twitter-x"></i></a> 
+            <a href="https://www.linkedin.com/" class="text-decoration-none text-dark" target="_blank"><i class="bi bi-linkedin"></i></a>
           </div>
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <h5 class="text">Ayuda</h5>
             <ul class="list-unstyled">
               <li>
-                <a href="#!" class="text-dark">Link 1</a>
+                <a href="#!" class="text-dark">Lucas Castro</a>
               </li>
               <li>
-                <a href="#!" class="text-dark">Link 2</a>
+                <a href="#!" class="text-dark">Diego Morate Leiva</a>
               </li>
               <li>
-                <a href="#!" class="text-dark">Link 3</a>
+                <a href="#!" class="text-dark">Bruno Cacciola</a>
               </li>
               <li>
-                <a href="#!" class="text-dark">Link 4</a>
+                <a href="#!" class="text-dark">Alejandro Garrido</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Mateo Carboni</a>
               </li>
             </ul>
           </div>
@@ -188,6 +191,23 @@
             <h5 class="text">Acerca de</h5>
             <ul class="list-unstyled">
               <li>
+                <a href="#!" class="text-dark">Diseño y Desarrollo Web</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">2do Cuatrimestre</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">2024</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">UADE</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text">Novedades Goat</h5>
+            <ul class="list-unstyled">
+              <li>
                 <a href="#!" class="text-dark">Link 1</a>
               </li>
               <li>
@@ -201,23 +221,6 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text">Novedades Goat</h5>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#!" class="text-dark">Link 1</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-dark">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-dark">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-dark">Link 4</a>
-                </li>
-              </ul>
-            </div>
         </div>
       </div>
       <div class="footer-banner text-center p-1">
@@ -226,6 +229,49 @@
         <a class="copy">Términos y condiciones </a>
       </div>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+   <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                dots:false,
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  768: {
+                    items: 3
+                  },
+                  1200: {
+                    items: 5
+                  }
+                }
+            })
+        });
+   </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
