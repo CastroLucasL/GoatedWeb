@@ -29,6 +29,24 @@ a, a:hover, a:focus, a:active {
     color: #46494C;
 }
 
+/*Hover nav*/
+.nav-link {
+    position: relative;
+}
+.nav-link::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: #46494C;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
 main {
     flex: 1;
 }
@@ -69,7 +87,7 @@ main {
     margin: 0 0px;
 }
 
-
+/*Estilos del Slider*/
 .carousel-inner h5 {
     color: #e0d9c8;
     font-weight: bold;
@@ -432,20 +450,19 @@ footer {
 /* Estilo del contenedor de opiniones */
 .testimonials-container {
     display: flex;
-    flex-direction: row; /* Coloca los testimonios en una fila horizontal */
+    flex-direction: row; 
     gap: 20px;
-    justify-content: center; /* Centra los testimonios en el contenedor */
-    flex-wrap: wrap; /* Para que los testimonios pasen a la siguiente línea en pantallas pequeñas */
+    justify-content: center; 
+    flex-wrap: wrap; 
 }
 
 .testimonial {
     display: flex;
-    flex-direction: column; /* Para alinear cada contenido del testimonio en columna */
-    align-items: center;
+    flex-direction: column; 
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
-    width: 300px; /* Ancho fijo para cada testimonio */
+    width: 300px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
