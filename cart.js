@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
             cartItems.push(product);
             localStorage.setItem('cart', JSON.stringify(cartItems));
 
-            // Notificar al usuario
+            
         } else {
             console.error('No se pudo obtener la información del producto.');
         }
