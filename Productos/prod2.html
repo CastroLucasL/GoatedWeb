@@ -195,6 +195,19 @@
                         <div class="col-12 my-2">
                             <button class="btn btn-primary" id="add-to-cart">Agregar al carrito</button>
                         </div>
+                        <div class="toast-container position-fixed top-50 end-0 p-3">
+                          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                              <i class="bi bi-bag-check me-3"></i>
+                              <strong class="me-auto">Goated</strong>
+                              <small>Ahora</small>
+                              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body">
+                              Producto agregado al carrito con éxito
+                            </div>
+                          </div>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -286,5 +299,16 @@
               <a class="copy">Términos y condiciones </a>
             </div>
           </footer>
+          <script>
+            const toastTrigger = document.getElementById('add-to-cart')
+            const toastLiveExample = document.getElementById('liveToast')
+
+            if (toastTrigger) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+            toastTrigger.addEventListener('click', () => {
+                toastBootstrap.show()
+            })
+        }
+        </script>
     </body>
 </html>
