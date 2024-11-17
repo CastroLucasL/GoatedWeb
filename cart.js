@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
             localStorage.setItem('cart', JSON.stringify(cartItems));
 
             // Notificar al usuario
-            alert('Producto agregado al carrito!');
         } else {
             console.error('No se pudo obtener la información del producto.');
         }
