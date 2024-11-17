@@ -140,21 +140,6 @@
                 location.reload();
             }, 2000);
         }
-    
-        // Validación del formulario
-    (function () {
-        'use strict';
-        const forms = document.querySelectorAll('.needs-validation');
-        forms.forEach(form => {
-            form.addEventListener('submit', event => {
-                if (!form.checkValidity()) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-            }, false);
-        });
-    })();
     </script>
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -332,7 +317,7 @@
                             <!-- Nombre -->
                             <div class="col-md-6">
                                 <label for="nombre" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="nombre" required>
+                                <input type="text" class="form-control" id="nombre" pattern="[A-Za-z\s]+" required>
                                 <div class="invalid-feedback">
                                     Por favor, ingresa tu nombre.
                                 </div>
@@ -340,7 +325,7 @@
                             <!-- Apellido -->
                             <div class="col-md-6">
                                 <label for="apellido" class="form-label">Apellido</label>
-                                <input type="text" class="form-control" id="apellido" required>
+                                <input type="text" class="form-control" id="apellido" pattern="[A-Za-z\s]+" required>
                                 <div class="invalid-feedback">
                                     Por favor, ingresa tu apellido.
                                 </div>
@@ -356,7 +341,7 @@
                             <!-- Número de tarjeta -->
                             <div class="col-md-12">
                                 <label for="numeroTarjeta" class="form-label">Número de Tarjeta</label>
-                                <input type="text" class="form-control" id="numeroTarjeta" maxlength="16" required>
+                                <input type="text" class="form-control" id="numeroTarjeta" pattern="\d{16}" required>
                                 <div class="invalid-feedback">
                                     Ingresa un número de tarjeta válido (16 dígitos).
                                 </div>
@@ -386,5 +371,21 @@
             </div>
         </div>
       </div>
+      <script>
+        // Validación de Bootstrap para el formulario
+        (function () {
+            'use strict';
+            var forms = document.querySelectorAll('.needs-validation');
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
 </body>
 </html>
