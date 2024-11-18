@@ -139,11 +139,13 @@ h2 {
 }
 /* Ajustes para los elementos del carrusel */
 .owl-carousel .item {
-    width: 200px; 
-    height: 200px; 
+    position: relative;
+    width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
-    border: solid  #46494C;
+    align-items: center;
+    border: solid #46494C;
     border-width: 3px;
     border-radius: 10px;
     overflow: hidden;
@@ -152,17 +154,38 @@ h2 {
 /* Ajustes para las imágenes del carrusel */
 #container-destacados {
     display: flex;
-    justify-content: center; 
-    margin: 0 auto; 
-    width: 100%; 
-    max-width: 1200px; 
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .owl-carousel .item img {
-    
-    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
 
+/* Estilo del hover */
+.hover-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.item:hover .hover-overlay {
+    opacity: 1;
+}
+
+/*Carousel sponsors*/
 #container-sponsors {
     margin: 0 auto; 
     margin-bottom: 40px;    
@@ -622,3 +645,4 @@ footer {
     }
     
 }
+
