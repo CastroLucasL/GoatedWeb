@@ -703,3 +703,7 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+.container-productos{
+    padding-bottom: 50px;
+}
