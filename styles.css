@@ -16,6 +16,8 @@ body {
     margin-left: 150px;
 }
 
+
+
 h1 {
     text-align: center;
     color: #46494C;
@@ -88,8 +90,7 @@ main {
 }
 
 /*Estilos del Slider*/
-.carousel-inner h5 {
-    color: #e0d9c8;
+.carousel-inner h2 {
     font-weight: bold;
     font-size: 2.5rem;
     text-transform: uppercase;
@@ -97,6 +98,12 @@ main {
     opacity: 0;
     transform: translateY(-20px);
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.carousel-verano{
+    color: #5E503F;
+}
+.carousel-conoces{
+    color: #e0d9c8;
 }
 .carousel-inner p {
     color: #ffffff;
@@ -107,7 +114,7 @@ main {
     transform: translateY(20px);
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
-.carousel-item.active .carousel-caption h5{
+.carousel-item.active .carousel-caption h2{
     opacity: 1;
     transform: translateY(0);
 }
@@ -292,10 +299,14 @@ footer {
     bottom: 0;
     left: 0;
 }
+
 .copy{
     color: white;
     text-decoration: none;
     margin: 0 10px;
+}
+.copy:hover{
+    color: black;
 }
 
 
