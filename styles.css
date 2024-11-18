@@ -13,7 +13,6 @@ body {
 }
 
 .navbar-nav{
-    margin-left: 150px;
     align-items: center;
 }
 
@@ -687,8 +686,7 @@ footer {
         margin-left: 0px;
         display: flex;
         flex-direction: column;
-        text-align: right;
-        align-items: end;        
+        text-align: right; 
     }
     .d-flex{
         justify-content: right;
@@ -698,4 +696,10 @@ footer {
         margin-left: 20%;
     }
     
+}
+
+#search-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
