@@ -630,6 +630,35 @@ footer {
     font-size: 1.5em;
 }
 
+/*Lookbook de productos*/
+.lookbook-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre los contenedores */
+    justify-content: center; /* Centra los contenedores horizontalmente */
+}
+.container-lookbook {
+    margin: 20px;
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre las imágenes */
+    border: #46494C solid;
+}
+
+.lookbook img {
+    width: 45%; /* Ajusta este valor según sea necesario */
+    height: auto;
+    margin: 5px;
+    transition: transform 0.3s ease;
+}
+
+.lookbook img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+}
+
 /* Botón de Guía de Talles y modales */
 .btn-guia-talles , .form-btn{
     margin-top: 15px; 
