@@ -160,22 +160,42 @@
         </div>
          <!--Formulario-->
         <div class="container contact-page">
-          <h2>Contáctanos</h2>
+          <h2>Contactános</h2>
           <p>¿Como estas cabrita? ¿Tenes preguntas o comentarios? ¡Dejanos tus datos y tu consulta!</p>  
-          <form action="#" method="post" class="contact-form">
-              <label for="name">Nombre</label>
-              <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+          <form action="#" method="post" class="contact-form needs-validation" novalidate>
+              <div class="mb-3 text-start">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" required>
+                <div class="invalid-feedback">  
+                  Por favor, ingresa tu nombre.
+                </div>
+              </div>
 
-              <label for="email">Correo electrónico</label>
-              <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+              <div class="mb-3 text-start">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Tu correo electrónico" required>
+                <div class="invalid-feedback">
+                  Ingresa un correo electrónico válido.
+                </div>
+              </div>
 
-              <label for="subject">Asunto</label>
-              <input type="text" id="subject" name="subject" placeholder="Asunto" required>
+              <div class="mb-3 text-start">
+                <label for="subject" class="form-label">Asunto</label>
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Asunto" required>
+                <div class="invalid-feedback">
+                  Por favor, ingresa el asunto.
+                </div>
+              </div>
 
-              <label for="message">Mensaje</label>
-              <textarea id="message" name="message" placeholder="Escribi tu mensaje aca..." rows="5" required></textarea>
+              <div class="mb-3 text-start">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" name="message" placeholder="Escribi tu mensaje aca..." rows="5" required></textarea>
+                <div class="invalid-feedback">
+                  Por favor, ingresa tu mensaje.
+                </div>
+              </div>
 
-              <button type="submit">Enviar</button>
+              <button type="submit" class="btn btn-primary">Enviar</button>
           </form>
         </div>
         <!-- Carousel Sponsors -->
@@ -297,6 +317,7 @@
       referrerpolicy="no-referrer"
     ></script>
 
+      
    <script>
         $(document).ready(function(){
             $('.owl-carousel').owlCarousel({
@@ -320,51 +341,41 @@
         });
    </script>
 
-
-
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
-
-   <script>
-        $(document).ready(function(){
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                nav: false,
-                autoplay: true,
-                autoplayTimeout: 4000,
-                dots:false,
-                responsive: {
-                  0: {
-                    items: 1
-                  },
-                  768: {
-                    items: 3
-                  },
-                  1200: {
-                    items: 5
-                  }
+  <script>
+    // Validación del formulario
+    (function () {
+        'use strict';
+        const forms = document.querySelectorAll('.needs-validation');
+        forms.forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                } else {
+                    event.preventDefault(); // Prevent default form submission
+                    const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+                    successModal.show(); // Show the success modal
+                    setTimeout(() => successModal.hide(), 2000); // Hide the modal after 5 seconds
+                    //luego que desaparezca el modal recargar la pagina
+                    setTimeout(() => location.reload(), 2000);
                 }
-            })
+                form.classList.add('was-validated');
+            }, false);
         });
-   </script>
+    })();
+  </script>
+      <!-- Modal de Agradecimiento -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center p-4">
+        <div class="modal-body">
+          <img src="imgs/compraCheck.png" alt="Check Icon" style="width: 80px;" class="mb-3">
+          <h4 class="fw-bold">Formulario enviado con éxito</h4>
+          <p>Recibimos tu consulta, en breve un representante se pondrá en contacto.</p>
+          <button type="button" class="form-btn mt-3" id="successModalOkButton" data-bs-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
   </body>
 </html>
