@@ -302,10 +302,14 @@ footer {
     bottom: 0;
     left: 0;
 }
+
 .copy{
     color: white;
     text-decoration: none;
     margin: 0 10px;
+}
+.copy:hover{
+    color: black;
 }
 
 
