@@ -146,7 +146,7 @@ h2 {
     letter-spacing: 1px;
 }
 /* Ajustes para los elementos del carrusel */
-.owl-carousel .item {
+.owl-carousel .item-destacados {
     position: relative;
     width: 200px;
     height: 200px;
@@ -168,9 +168,9 @@ h2 {
     max-width: 1200px;
 }
 
-.owl-carousel .item img {
-    max-width: 100%;
-    max-height: 100%;
+.owl-carousel .item{
+    width: 100px;
+    height: 100px;
     object-fit: cover;
 }
 
