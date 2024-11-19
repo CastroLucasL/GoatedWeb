@@ -197,7 +197,7 @@ h2 {
     transition: opacity 0.5s ease;
 }
 
-.item:hover .hover-overlay {
+.owl-item:hover .hover-overlay {
     opacity: 1;
 }
 
