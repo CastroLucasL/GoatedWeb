@@ -16,7 +16,9 @@ body {
     align-items: center;
 }
 
-
+span, p, div, a{
+    font-family: "Playfair Display", sans-serif;
+}
 
 h1 {
     text-align: center;
